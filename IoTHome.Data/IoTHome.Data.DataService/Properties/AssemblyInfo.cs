@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IoTHome.Data.DataClient")]
+[assembly: AssemblyTitle("IoTHome.Data.DataService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IoTHome.Data.DataClient")]
+[assembly: AssemblyProduct("IoTHome.Data.DataService")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b3232472-06ed-4a28-a5e6-fb7b7eb67a15")]
+[assembly: Guid("c625d8b9-6254-4a3d-8d63-47e04da7bb3f")]
 
 // Version information for an assembly consists of the following four values:
 //
