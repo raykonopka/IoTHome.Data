@@ -1,0 +1,36 @@
+--Pre-Deployment
+USE master;
+GO
+
+IF(db_id(N'IoTHomeDB') IS NOT NULL)
+BEGIN
+	DROP DATABASE IoTHomeDB;
+END;
+
+CREATE DATABASE IoTHomeDB;
+GO
+
+USE IoTHomeDB;
+GO
+
+--Script
+CREATE SCHEMA IoTHomeDB;
+GO
+
+CREATE TABLE IoTHomeDB.SensorHistory
+(
+	Id INT NOT NULL IDENTITY(1,1)
+	,SensorName NVARCHAR(150) NOT NULL
+	,SavedValue NVARCHAR(150) NOT NULL
+	,TimeSaved DATETIME NOT NULL
+);
+GO
+
+ALTER TABLE IoTHomeDB.SensorHistory
+	ADD CONSTRAINT pk_sensorhistory_id PRIMARY KEY CLUSTERED (Id);
+GO
+
+--Post-Deployment
+INSERT INTO IoTHomeDB.SensorHistory
+VALUES ('Temperature', '78F', '2017-1-23 11:09:00.000');
+GO
